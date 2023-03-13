@@ -1,0 +1,111 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using Tao.OpenGl;
+using Tao.Platform.Windows;
+
+namespace deneme
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            opGL.InitializeContexts();
+            
+            Gl.glMatrixMode(Gl.GL_PROJECTION);
+            Gl.glLoadIdentity();
+            Gl.glOrtho(-1, 1, -1, 1, -1, 1);
+            Gl.glMatrixMode(Gl.GL_MODELVIEW);
+            
+        }
+
+        private void simpleOpenGlControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myPaint(object sender, PaintEventArgs e)
+        {
+          
+            Gl.glClearColor(0.9f, 0.2f, 0.0f,0.0f);
+            Gl.glBegin(Gl.GL_LINES);
+            Gl.glVertex2f(-1.0f, 0.0f);
+            Gl.glVertex2f(1.0f,0.0f);
+            Gl.glEnd();
+            Gl.glBegin(Gl.GL_LINES);
+            Gl.glVertex2f(0.0f, -1.0f);
+            Gl.glVertex2f(0.0f, 1.0f);
+            Gl.glEnd();
+            nokta();
+            ucgen();
+            ucgenOteleme();
+            ucgenDondurme();
+
+
+
+        }
+        public void ucgen()
+        { 
+            Gl.glColor3d(0.4d, 0.4d, 0.8d);
+            Gl.glBegin(Gl.GL_TRIANGLES);
+            Gl.glVertex2d(0.5, 0.1);
+            Gl.glVertex2d(0.8, 0.1);
+            Gl.glVertex2d(0.5, 0.3);
+            Gl.glEnd();
+            
+        }
+        public void ucgenOteleme()
+        {
+            
+            Gl.glColor3d(0.4d,0.8d, 0.8d);
+            Gl.glTranslated(-0.4d, 0.0d, 0.0d);
+            Gl.glBegin(Gl.GL_TRIANGLES);
+            Gl.glVertex2d(0.5, 0.1);
+            Gl.glVertex2d(0.8, 0.1);
+            Gl.glVertex2d(0.5, 0.3);
+            Gl.glEnd();
+            
+
+        }
+        public void ucgenDondurme()
+        {
+            
+            Gl.glColor3d(1.0d, 0.9d, 1.0d);
+            Gl.glTranslated(0.5d, 0.5d, 0.0d);
+            Gl.glRotated(80, 0d, 0d, 1d);
+            Gl.glTranslated(-0.35d, -0.35d, 0.0d);
+            Gl.glBegin(Gl.GL_TRIANGLES);
+            Gl.glVertex2d(0.5, 0.1);
+            Gl.glVertex2d(0.8, 0.1);
+            Gl.glVertex2d(0.5, 0.3);
+            Gl.glEnd();
+            Gl.glFlush();
+        }
+
+        public void nokta()
+        {
+            
+            Gl.glColor3d(0.1d, 0.9d, 0.3d);
+            Gl.glPointSize(5.0f);
+            Gl.glBegin(Gl.GL_POINTS); 
+            Gl.glVertex2d(0.5d,0.5d);
+            Gl.glEnd();
+            
+
+        }
+        
+    
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
+    }
+}

@@ -1,0 +1,9 @@
+C:\Users\MONSTER\source\repos\ks2\ks2\bin\Debug\ks2.exe
+C:\Users\MONSTER\source\repos\ks2\ks2\bin\Debug\ks2.pdb
+C:\Users\MONSTER\source\repos\ks2\ks2\obj\Debug\ks2.csprojAssemblyReference.cache
+C:\Users\MONSTER\source\repos\ks2\ks2\obj\Debug\ks2.Form1.resources
+C:\Users\MONSTER\source\repos\ks2\ks2\obj\Debug\ks2.Properties.Resources.resources
+C:\Users\MONSTER\source\repos\ks2\ks2\obj\Debug\ks2.csproj.GenerateResource.cache
+C:\Users\MONSTER\source\repos\ks2\ks2\obj\Debug\ks2.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\source\repos\ks2\ks2\obj\Debug\ks2.exe
+C:\Users\MONSTER\source\repos\ks2\ks2\obj\Debug\ks2.pdb
